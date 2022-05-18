@@ -1,3 +1,4 @@
+# Spring50Errors
 ## 1、ComponentScan
 默认的 @ComponentScan() 扫描的是 Application.java 类相同文件夹的所有 Bean。
 如果移动 Application.java 类的位置，就可能找不到有些 Bean。
