@@ -1,0 +1,13 @@
+server:
+  port: 7777
+
+username: admin
+password: pass
+
+user:
+  name: admin
+  password: pass
+
+spring:
+  main:
+    allow-circular-references: true
