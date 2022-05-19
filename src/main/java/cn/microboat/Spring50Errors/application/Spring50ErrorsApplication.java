@@ -2,6 +2,7 @@ package cn.microboat.Spring50Errors.application;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.ComponentScans;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
@@ -19,6 +20,7 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
         @ComponentScan("cn.microboat.Spring50Errors.listener"),
         @ComponentScan("cn.microboat.Spring50Errors.annotation")
 })
+@ServletComponentScan(basePackages = "cn.microboat.Spring50Errors.filter")
 @EnableAspectJAutoProxy(exposeProxy = true)
 public class Spring50ErrorsApplication {
 
