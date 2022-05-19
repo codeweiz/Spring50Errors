@@ -25,8 +25,8 @@ public class HelloWorldController {
      */
 //    @Autowired
 //    private ApplicationContext applicationContext;
-    @RequestMapping(path = "/hi", method = RequestMethod.GET)
-    public String hi() {
+    @RequestMapping(path = "/hello", method = RequestMethod.GET)
+    public String hello() {
         return "hello world, service is : " + service;
     }
 
